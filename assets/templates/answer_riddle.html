@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <!-- Showcase -->
+  <div class="main">
+    <div class="showcase-block">
+        <p class="lead">Welcome {{ username }}</p>
+          <h1><span class="blank-asterisk"></span>Riddle: {{ riddle_index + 1 }}</h1>
+        <p class="lowercase"> {{ riddles[riddle_index]["riddle"] }} </p>
+        <form method="POST">
+          <input type="text" class="form-control shadow-none text-center" placeholder="Answer Here" name="answer"
+            id="answer" required>
+          <input type="hidden" name="riddle_index" id="riddle_index" value={{riddle_index}}>
+          <input type="hidden" name="userTry" value={{userTry}}>
+          <input type="hidden" name="score" id="score" value={{score}}>
+          <br>
+          <button type="submit" class="play"><i
+            class="fas fa-step-forward"></i></button>
+        </form>
+        <br>
+        <p class="start-text">Score: {{ score }} </p>
+        {% if(incorrect) %}
+        <p class="error-text">"{{ incorrect }}" - Incorrect Answer - Final Attempt</p>
+        {% endif %}
+    </div>
+  </div>
+
+{% endblock %}

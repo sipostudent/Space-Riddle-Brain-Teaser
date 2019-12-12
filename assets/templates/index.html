@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <!-- Showcase -->
+  <div class="main">
+    <div class="showcase-block">
+      <p class="lead">Welcome To</p>
+        <h1><span class="blank-asterisk"></span>Space <i class="fas fa-user-astronaut"></i> Riddle</h1>
+        <p>-A Brain Teaser Game-</p>
+        <br>
+        <p class="start-text">Press Play To Start</p>
+        <a class="play" href="{{ url_for('enter_name') }}"><i class="fas fa-play"></i></a>
+    </div>
+  </div>
+
+{% endblock %}

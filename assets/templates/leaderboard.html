@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Leaderboard -->
+<!-- <div class="main">
+  <h1>
+    <span style="font-size:15px">
+      <div class="card-body">
+        <h5 class="card-title"># FINAL SCORE: {{ score }}</h5>
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for score in highscores %}
+            <tr>
+              <th scope="row">{{ loop.index }}}</th>
+              <td>{{ highscores[loop.index-1]["name"] }}</td>
+              <td>{{ highscores[loop.index-1]["score"] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </span>
+  </h1>
+</div> -->
+
+  <!-- Showcase -->
+  <div class="main">
+    <div class="showcase-block">
+        <p class="lead">Top Players</p>
+        <h1><span class="blank-asterisk"></span>Final Score: {{ score }}</h1>
+        <!-- Leaderboard Table -->
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for score in highscores %}
+            <tr>
+              <th scope="row">{{ loop.index }}}</th>
+              <td>{{ highscores[loop.index-1]["name"] }}</td>
+              <td>{{ highscores[loop.index-1]["score"] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+{% endblock %}

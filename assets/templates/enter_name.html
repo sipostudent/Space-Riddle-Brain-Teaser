@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- 
+<div class="main">
+  <h1>
+    <br />
+    <span style="font-size:15px">
+      <div class="card-body">
+        <h5 class="card-title">
+          # PLAYER REGISTRATION
+        </h5>
+        <p class="card-text"> Enter your player name in the given field, then press either the enter key
+          or the step-forward icon to submit.
+        </p>
+        <p> Player names are utilised to provide a current 'SCORE' and
+          'FINAL SCORE' which upon game completion uploads to a leaderboard rank.
+        </p>
+        <form method="POST">
+          <input type="text" class="form-control text-center" id="inputEmail" placeholder="Type Here"
+            name="username" required>
+          <button type="submit" class="btn btn-default btn-block"><i class="fas fa-step-forward fa-2x"
+            onclick="playgame()" id="playgame"></i></button>
+        </form>
+      </div>
+    </span>
+  </h1>
+</div> -->
+
+  <!-- Showcase -->
+  <div class="main">
+    <div class="showcase-block">
+        <p class="lead">Enter Your Name</p>
+        <h1><span class="blank-asterisk"></span>Register</h1>
+        <p>-Scores get assigned to your name and a leaderboard-</p>
+        <form method="POST">
+          <input type="text" class="form-control shadow-none text-center" id="inputEmail" placeholder="Type here"
+            name="username" required>
+            <br>
+            <p class="start-text">Press Play To Begin</p>
+          <button type="submit" class="play"><i class="fas fa-play"
+            onclick="playgame()" id="playgame"></i></button>
+        </form>
+    </div>
+  </div>
+
+{% endblock %}

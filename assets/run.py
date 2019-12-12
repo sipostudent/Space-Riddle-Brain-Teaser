@@ -109,8 +109,10 @@ def play(username):
 
     return render_template("answer_riddle.html", title="Space Riddle | Play Game", username=username, riddles=riddles, riddle_index=riddle_index, score=player_score, incorrect=incorrect, userTry=user_try)
 
+# --------------------
+# Runs the Application
+#---------------------
 
-# Runs Application
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'))

@@ -1,0 +1,145 @@
+/* Google Fonts: Saira */
+
+@import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+
+/* The Body */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Saira', sans-serif;
+	font-size: 80%;
+  letter-spacing: 0.15em;
+	color: #fff;
+}
+
+
+/* Navigation */
+
+.navbar {
+	background: transparent !important;
+	box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	text-shadow: 0 0 10px #FFFFFF;
+}
+
+.navbar .nav-link {
+	font-size: 16px;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	text-shadow: 0 0 10px #fbbc05;
+	color: #fbbc05 !important;
+	text-transform: uppercase;
+}
+
+
+/* Video Background */
+
+.color-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.8;
+	background-color: rgba(34, 34, 34, 0.5);
+}
+
+#video-background {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+}
+
+
+/* Main */
+
+.showcase-block {
+	position: absolute;
+	left: 3%;
+	width: 94%;
+	text-align: center;
+	text-shadow: 0 0 10px #FFFFFF;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.blank-asterisk {
+	color: transparent;
+}
+
+.play {
+  font-size: 3em;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  text-shadow: 0 0 10px #FFFFFF;
+  cursor: pointer;
+}
+
+button {
+  color: #fff;
+  background-color: transparent;
+}
+
+.fa-play {
+  color: #fff;
+}
+
+.error-text {
+	color: #ea4335;
+	text-shadow: 0 0 10px #ea4335;
+}
+
+.start-text {
+	color: #34a853;
+	text-shadow: 0 0 10px #34a853;
+}
+
+.form-control {
+	display: block;
+	color: #fff !important;
+	background-color: rgba(34, 34, 34, 0.5) !important;
+	border: 2px solid #4285f4 !important;
+	border-radius: 24px;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.info-fontsize {
+	font-size: 1.4rem;
+}
+
+.main {
+	height: 100vh;
+	width: 100vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.table td,
+.table th {
+	color: #34a853;
+	text-shadow: 0 0 10px #34a853;
+}

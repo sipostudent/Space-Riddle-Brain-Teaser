@@ -114,7 +114,7 @@ def play(username):
 #---------------------
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP', '0.0.0.0'),
+    app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'))
 
 # --------------

@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="assets/static/images/space_riddle_snapshot.png" width="600">
+  <img src="static/images/space_riddle_snapshot.png" width="600">
   <br>
     <br>
   Space Riddle

@@ -1,15 +1,15 @@
 <h1 align="center">
 <br>
-  <img src="static/images/space_riddle_snapshot.png" width="600">
+  <img src="static/images/space-riddle-brain-teaser.png" width="600">
   <br>
     <br>
-  Space Riddle
+  Space Riddle - Brain Teaser Game
   <br>
 </h1>
 
 <h3 align="center">Practical Python Development</h3>
 
-<h4 align="center">A multi-player brain-teaser game that asks players to guess the answer to numerous text-based riddles</h4>
+<h4 align="center">A Multi-Player Brain-Teaser Game That Asks Players to Guess the Answer to Numerous Text-Based Riddles</h4>
 
 
 ## Table of Contents

@@ -9,7 +9,7 @@
 
 <h3 align="center">Practical Python Development</h3>
 
-<h4 align="center">A Multi-Player Brain-Teaser Game That Asks Players to Guess the Answer to Numerous Text-Based Riddles</h4>
+<h4 align="center">A Multi Player Brain Teaser Game That Asks Players to Guess the Answer to Numerous Text Based Riddles</h4>
 
 
 ## Table of Contents

@@ -30,14 +30,14 @@ riddles = ""
 
 @app.route('/')
 def index():
-    return render_template("index.html", title="Space Riddle | Home")
+    return render_template("index.html", title="Home | Space Riddle")
 
 
 @app.route('/leaderboard')
 def leaderboard():
     with open("data/highscores.json", "r") as json_data:
         highscores = json.load(json_data)
-    return render_template("leaderboard.html", title="Space Riddle | Leaderboard", highscores=highscores)
+    return render_template("leaderboard.html", title="Leaderboard | Space Riddle", highscores=highscores)
 
 
 @app.route('/enter_name', methods=["GET", "POST"])
@@ -48,7 +48,7 @@ def enter_name():
 
         return redirect(username)
 
-    return render_template("enter_name.html", title="Space Riddle | Register")
+    return render_template("enter_name.html", title="Register | Space Riddle")
 
 
 @app.route('/<username>', methods=["GET", "POST"])
@@ -105,14 +105,14 @@ def play(username):
             with open("data/highscores.json", "w") as file:
                 json.dump(highscores, file)
 
-            return render_template("leaderboard.html", title="Space Riddle | Game Over", score=player_score, highscores=highscores)
+            return render_template("leaderboard.html", title="Game Over | Space Riddle", score=player_score, highscores=highscores)
 
-    return render_template("answer_riddle.html", title="Space Riddle | Play Game", username=username, riddles=riddles, riddle_index=riddle_index, score=player_score, incorrect=incorrect, userTry=user_try)
+    return render_template("answer_riddle.html", title="Play Game | Space Riddle", username=username, riddles=riddles, riddle_index=riddle_index, score=player_score, incorrect=incorrect, userTry=user_try)
 
 ## Runs the Application
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP', '0.0.0.0'),
+    app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'))
 
 # --------------

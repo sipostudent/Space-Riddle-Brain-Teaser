@@ -1,9 +1,16 @@
 /* Google Fonts: Saira */
-
-@import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+@font-face {
+	font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Saira Regular"), local("Saira-Regular"), url(https://fonts.gstatic.com/s/saira/v4/memwYa2wxmKQyNknTZY.ttf) format("truetype");
+}
 
 /* The Body */
-
+/* Navigation */
+/* Video Background */
+/* Main */
 body {
 	margin: 0;
 	padding: 0;
@@ -11,21 +18,13 @@ body {
 	background-size: cover;
 	font-family: 'Saira', sans-serif;
 	font-size: 80%;
-  letter-spacing: 0.15em;
+	letter-spacing: 0.15em;
 	color: #fff;
 }
 
-
-/* Navigation */
-
 .navbar {
 	background: transparent !important;
-	box-shadow: 5px 5px 15px 5px #000000;
-}
-
-.navbar-brand {
-	text-transform: uppercase;
-	text-shadow: 0 0 10px #FFFFFF;
+	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px transparent;
 }
 
 .navbar .nav-link {
@@ -37,8 +36,10 @@ body {
 	text-transform: uppercase;
 }
 
-
-/* Video Background */
+.navbar-brand {
+	text-transform: uppercase;
+	text-shadow: 0 0 10px #FFFFFF;
+}
 
 .color-overlay {
 	position: absolute;
@@ -61,9 +62,6 @@ body {
 	z-index: -100;
 }
 
-
-/* Main */
-
 .showcase-block {
 	position: absolute;
 	left: 3%;
@@ -73,7 +71,7 @@ body {
 }
 
 h1 {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .blank-asterisk {
@@ -81,21 +79,21 @@ h1 {
 }
 
 .play {
-  font-size: 3em;
-  color: #fff;
-  background-color: transparent;
-  border: none;
-  text-shadow: 0 0 10px #FFFFFF;
-  cursor: pointer;
+	font-size: 3em;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	text-shadow: 0 0 10px #FFFFFF;
+	cursor: pointer;
 }
 
 button {
-  color: #fff;
-  background-color: transparent;
+	color: #fff;
+	background-color: transparent;
 }
 
 .fa-play {
-  color: #fff;
+	color: #fff;
 }
 
 .error-text {
@@ -117,7 +115,7 @@ button {
 }
 
 .lowercase {
-  text-transform: lowercase;
+	text-transform: lowercase;
 }
 
 .info-fontsize {
@@ -138,7 +136,11 @@ button {
 	align-items: center;
 }
 
-.table td,
+.table td {
+	color: #34a853;
+	text-shadow: 0 0 10px #34a853;
+}
+
 .table th {
 	color: #34a853;
 	text-shadow: 0 0 10px #34a853;
